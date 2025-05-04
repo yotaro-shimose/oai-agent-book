@@ -121,32 +121,6 @@ if __name__ == "__main__":
 4. **実行**：
    ユーザーからの入力に対して`party_coordinator`を実行し、結果を表示しています。
 
-## エージェントをツールとして使う際のワークフロー
-
-エージェントをツールとして使用する際のワークフローを図で表すと以下のようになります：
-
-```mermaid
-sequenceDiagram
-    participant User as ユーザー
-    participant Main as メインエージェント<br>(Party Coordinator)
-    participant Sub as サブエージェント<br>(Search Assistant)
-    participant WebSearch as WebSearchTool
-    
-    User->>Main: 1. リクエスト送信<br>「ポケモンパーティーを作りたい」
-    Note over Main: 2. リクエストを分析
-    Note over Main: 3. ポケモン情報が必要と判断
-    Main->>Sub: 4. サブタスク委譲<br>「まるっこいポケモンを検索」
-    Note over Sub: 5. サブタスクを分析
-    Sub->>WebSearch: 6. Web検索ツールを使用
-    WebSearch->>Sub: 7. 検索結果を返送
-    Note over Sub: 8. 結果を構造化
-    Sub->>Main: 9. 構造化された結果を返送
-    Note over Main: 10. 複数のサブタスク結果を統合
-    Note over Main: 11. 最終的な回答を生成
-    Main->>User: 12. パーティー提案を返送
-```
-
-このワークフローでは、メインエージェント（Party Coordinator）がタスク全体を管理し、必要に応じてサブエージェント（Search Assistant）にサブタスクを委譲しています。サブエージェントは自身のツール（WebSearchTool）を使用してタスクを完了し、結果をメインエージェントに返します。
 
 ## タスク設計は難しい
 人間にとってもそうであるように他のエージェントにとって適切なタスクを設計することは簡単ではありません。もしあなたがサブタスクの粒度や入出力について考えがあるのであれば、それをシステムプロンプトに含めたり、サブタスクの入力やゴールとなる出力の形状を定義するべきです。
