@@ -11,17 +11,17 @@ published: false
 price: 0 # 有料の場合200〜5000
 # 本に含めるチャプターを順番に並べましょう
 chapters:
-  - 1.1_Agents Engineerという新しい職業
-  - 2.1_環境構築
-  - 3.0_概要
-  - 3.1_Pydantic
-  - 3.2_非同期プログラミング
-  - 4.1_エージェントを作ってみる
-  - 4.2_マルチターンで会話する
-  - 4.3_エージェントの挙動をトレースする
-  - 4.4_出力形式を指定する
-  - 5.1_エージェントにツールを与える
-  - 5.2_WebSearchToolを使う
-  - 5.3_エージェントをツールとして使う
-  - 5.4_MCPを使ってエージェントを拡張する
-  - 6.1_AgenticRAG
+  - 1-1_NewProfessionAgentEngineer
+  - 2-1_EnvironmentSetup
+  - 3-0_PythonBasics
+  - 3-1_Pydantic
+  - 3-2_AsynchronousProgramming
+  - 4-1_FirstAgent
+  - 4-2_MultiTurn
+  - 4-3_Tracing
+  - 4-4_StructuredOutput
+  - 5-1_Tools
+  - 5-2_WebSearchTool
+  - 5-3_AgentsAsTools
+  - 5-4_ModelContextProtocol
+  - 6-1_AgenticRAG
