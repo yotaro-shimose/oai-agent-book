@@ -27,5 +27,42 @@ async def main():
     print(response.final_output_as(Country))
 
 
+class Ingredient(BaseModel):
+    name: str
+    amount: float
+    unit: str  # グラム、個、カップなど
+
+
+class Recipe(BaseModel):
+    title: str
+    cuisine_type: str  # 和食、洋食、中華など
+    ingredients: list[Ingredient]
+
+
+# エージェントの作成
+recipe_agent = Agent(
+    name="レシピアシスタント",
+    instructions="""
+    あなたは料理レシピを提供するアシスタントです。
+    ユーザーが料理について質問したら、その料理のレシピ情報を詳細に提供してください。
+    """,
+    output_type=Recipe,
+    model="gpt-4.1-nano",
+)
+
+
+async def main2():
+    load_dotenv()
+    # レシピのリクエスト
+    recipe_request = "カレーライスのレシピを教えてください。"
+    response = await Runner.run(
+        recipe_agent,
+        input=recipe_request,
+    )
+    # レシピの出力
+    recipe = response.final_output_as(Recipe)
+    print(recipe)
+
+
 if __name__ == "__main__":
-    asyncio.run(main())
+    asyncio.run(main2())
