@@ -11,17 +11,17 @@ published: false
 price: 0 # 有料の場合200〜5000
 # 本に含めるチャプターを順番に並べましょう
 chapters:
-  - 1-1_NewProfessionAgentEngineer
-  - 2-1_EnvironmentSetup
-  - 3-0_PythonBasics
-  - 3-1_Pydantic
-  - 3-2_AsynchronousProgramming
-  - 4-1_FirstAgent
-  - 4-2_MultiTurn
-  - 4-3_Tracing
-  - 4-4_StructuredOutput
-  - 5-1_Tools
-  - 5-2_WebSearchTool
-  - 5-3_AgentsAsTools
-  - 5-4_ModelContextProtocol
-  - 6-1_AgenticRAG
+  - 1-1_newprofessionagentengineer
+  - 2-1_environmentsetup
+  - 3-0_pythonbasics
+  - 3-1_pydantic
+  - 3-2_asynchronousprogramming
+  - 4-1_firstagent
+  - 4-2_multiturn
+  - 4-3_tracing
+  - 4-4_structuredoutput
+  - 5-1_tools
+  - 5-2_websearchtool
+  - 5-3_agentsastools
+  - 5-4_modelcontextprotocol
+  - 6-1_agenticrag
