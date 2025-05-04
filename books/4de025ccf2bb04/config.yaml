@@ -1,6 +1,12 @@
 title: "Open AI Agents SDK"
 summary: "Python初心者からエージェントエンジニアへ。OpenAI Agents SDKを使ってエージェントを開発する方法を学ぶ。"
-topics: []
+topics: [
+  "Python",
+  "エージェント",
+  "AI",
+  "LLM",
+  "OpenAI Agents SDK"
+]
 published: false
 price: 0 # 有料の場合200〜5000
 # 本に含めるチャプターを順番に並べましょう
