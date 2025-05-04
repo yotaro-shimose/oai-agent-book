@@ -33,19 +33,19 @@ AIの力を活用したアプリケーション開発は、もはや一部の専
 - Pydantic
 - 非同期プログラミング
 
-### 4. Agents Basics
+### 4. LLM Basics
 - エージェントを作ってみる
 - マルチターンで会話する
 - トレーシングしてみる
 - 出力形式を指定する
 
 ### 5. Tools
+- FunctionTool
 - WebSearchTool
-- Think Tool
-- Agent as a Tool
-- ツール実行で終了する
+- Agents as Tools
+- Model Context Protocol (MCP)
+
+### 6. Agentic RAG
+工事中
 
 
-### 6. MCP
-- MCPとは
-- Playwright MCP
