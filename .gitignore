@@ -11,3 +11,4 @@ wheels/
 
 .env
 mcp_sandbox
+agent_sandbox
